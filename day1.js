@@ -6,6 +6,7 @@ var targetNum = 2020;
 
 function p1()
 {
+    // Loop through each, just take our curr from the target and see if it's in the set
     for (let i of input)
     {
         if(nums.has(targetNum - i))
@@ -18,6 +19,8 @@ function p1()
 
 function p2()
 {
+    // Walk through the array starting from 0 and then sub i + 1
+    // and find if our set has the third required value
     for(var i = 0; i < input.length; i++)
     for(var j = i + 1; j < input.length; j++)
     {
